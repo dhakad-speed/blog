@@ -5,6 +5,7 @@ export default function App() {
     <>
       <div>
         <h1>A Blog with App Write</h1>
+        <h1>HELLO WORLD</h1>
       </div>
     </>
   );
