@@ -17,7 +17,9 @@ export class AuthService {
       });
       if (user) {
         // direct login method
-        this.login({ email, password });
+        this.login(email, password);
+        return user;
+        console.log(user);
       } else {
         return user;
       }
@@ -25,7 +27,7 @@ export class AuthService {
       console.log(error);
     }
   }
-  async login({ email, password }) {
+  async login(email, password) {
     try {
       return await this.account.createEmailPasswordSession(email, password);
     } catch (error) {
