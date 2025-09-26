@@ -63,6 +63,7 @@ function SignupComponent() {
         <form onSubmit={handleSubmit(create)}>
           <div className="space-y-5">
             <component.Input
+              id="name"
               className="border-none outline-none"
               label="Name"
               placeholder="Enter your full name"
@@ -71,6 +72,7 @@ function SignupComponent() {
               })}
             />
             <component.Input
+              id="email"
               className="border-none outline-none"
               label="Email"
               placeholder="Enter your email"
@@ -85,6 +87,7 @@ function SignupComponent() {
               })}
             />
             <component.Input
+              id="password"
               className="border-none outline-none"
               label="Password"
               type="password"
